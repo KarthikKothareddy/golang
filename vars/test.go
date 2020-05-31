@@ -13,7 +13,8 @@ func main() {
 
 	// foo
 	// bar()
-	typeTesting()
+	// typeTesting()
+	streamPrint()
 }
 
 func foo() {
@@ -47,6 +48,7 @@ var y int = 99
 var z string = `
 Hi I am 
 "Karthik"
+
 `
 
 var z1 string
@@ -63,6 +65,18 @@ func typeTesting() {
 	fmt.Printf("%b\n", x)
 	// hexadecimal
 	fmt.Printf("%x\n", x)
-	// hexadecimal with '0x' infront of it
+	// hexadecimal with '0x' in front of it
 	fmt.Printf("%#x\n", x)
+	y = 911
+	fmt.Printf("%#x\n", y)
+	fmt.Printf("%#x\t%b\t%x", y, y, y)
+}
+
+func streamPrint() {
+	y = 911
+
+	s := fmt.Sprintf("%#x\t%b\t%x", y, y, y)
+	fmt.Println(s)
+	fmt.Printf("%v", y)
+
 }
