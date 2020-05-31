@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	exercise2()
+	exercise4()
 }
 
 func exercise1() {
@@ -33,4 +33,14 @@ func exercise2() {
 	s := fmt.Sprintf("%v%v%v", X, Y, Z)
 	fmt.Println(s)
 
+}
+
+func exercise4() {
+
+	type myType int
+	var x myType
+
+	fmt.Printf("%T\n", x)
+	x = 42
+	fmt.Println(x)
 }
