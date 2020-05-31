@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	exercise4()
+	exercise5()
 }
 
 func exercise1() {
@@ -35,12 +35,24 @@ func exercise2() {
 
 }
 
+type myType int
+
+var x myType
+
 func exercise4() {
 
-	type myType int
-	var x myType
-
 	fmt.Printf("%T\n", x)
+	fmt.Println(x)
 	x = 42
 	fmt.Println(x)
+}
+
+var y int
+
+func exercise5() {
+	x = 42
+	y = int(x)
+	fmt.Printf("%T\n", y)
+	fmt.Println(y)
+
 }

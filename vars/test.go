@@ -54,9 +54,9 @@ Hi I am
 var z1 string
 var y1 int
 
-var x = 11
-
 func typeTesting() {
+
+	var x = 11
 
 	fmt.Println(x)
 	// type
