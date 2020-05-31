@@ -44,8 +44,10 @@ func bar() {
 
 // this is a static Programming language, not dynamic
 var y int = 99
-var z string = `Hi I am 
-"Karthik"`
+var z string = `
+Hi I am 
+"Karthik"
+`
 
 var z1 string
 var y1 int
