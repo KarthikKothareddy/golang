@@ -72,11 +72,32 @@ func typeTesting() {
 	fmt.Printf("%#x\t%b\t%x", y, y, y)
 }
 
-func streamPrint() {
-	y = 911
+var a int
 
-	s := fmt.Sprintf("%#x\t%b\t%x", y, y, y)
-	fmt.Println(s)
-	fmt.Printf("%v", y)
+type hotdog int
+
+var b hotdog
+
+func streamPrint() {
+	// y = 911
+	// s := fmt.Sprintf("%#x\t%b\t%x", y, y, y)
+	// fmt.Println(s)
+	// fmt.Printf("%v", y)
+
+	// type
+	a = 10
+	fmt.Println(a)
+	fmt.Printf("%T\n", a)
+
+	b = 15
+	fmt.Println(b)
+	fmt.Printf("%T\n", b)
+
+	// type conversions
+	// Go is static typed
+	// this is called a Conversion NOT CASTING
+	a = int(b)
+	fmt.Println(a)
+	fmt.Printf("%T\n", a)
 
 }
