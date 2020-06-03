@@ -51,11 +51,11 @@ func numericTypes() {
 
 func stringTypes() {
 
-	s := `"Hello, World!"`
+	s := "Hello, World!"
 	fmt.Println(s)
 	fmt.Printf("%T\n", s)
 
-	// conversion from type string to slice of bytes
+	// conversion from type string to slice of bytes ascii
 	bs := []byte(s)
 	fmt.Println(bs)
 	fmt.Printf("%T\n", bs)
@@ -68,6 +68,7 @@ func stringTypes() {
 	fmt.Println("")
 
 	for i, v := range s {
+		// hexadecimal
 		fmt.Printf("At index position %d we have hex %#x \n", i, v)
 	}
 
