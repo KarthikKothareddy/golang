@@ -55,4 +55,20 @@ func stringTypes() {
 	fmt.Println(s)
 	fmt.Printf("%T\n", s)
 
+	// conversion from type string to slice of bytes
+	bs := []byte(s)
+	fmt.Println(bs)
+	fmt.Printf("%T\n", bs)
+
+	for i := 0; i < len(s); i++ {
+		// utf-8 codepoints
+		fmt.Printf("%#U ", s[i])
+	}
+
+	fmt.Println("")
+
+	for i, v := range s {
+		fmt.Printf("At index position %d we have hex %#x \n", i, v)
+	}
+
 }
