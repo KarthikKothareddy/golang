@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 // Efficient Execution
 // Efficient Compilation
@@ -8,8 +11,14 @@ import "fmt"
 
 func main() {
 	fmt.Println("This is Programming fundamentals section")
+
+	// runtime package
+	fmt.Println("Go OS: ", runtime.GOOS)
+	fmt.Println("GO Architecture: ", runtime.GOARCH)
+
 	// varBoolean()
-	numericTypes()
+	// numericTypes()
+	stringTypes()
 }
 
 func varBoolean() {
@@ -19,10 +28,10 @@ func varBoolean() {
 	fmt.Println(a == b, a >= b, a < b)
 }
 
-var x int
-var y float64
-
 func numericTypes() {
+
+	var x int
+	var y float64
 
 	// integers
 	x = 10
@@ -34,4 +43,16 @@ func numericTypes() {
 	y = 10.12
 	fmt.Println(y)
 	fmt.Printf("%T\n", y)
+
+	var i int8 = -128
+	fmt.Println(i)
+
+}
+
+func stringTypes() {
+
+	s := `"Hello, World!"`
+	fmt.Println(s)
+	fmt.Printf("%T\n", s)
+
 }
