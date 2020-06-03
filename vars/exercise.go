@@ -40,7 +40,6 @@ type myType int
 var x myType
 
 func exercise4() {
-
 	fmt.Printf("%T\n", x)
 	fmt.Println(x)
 	x = 42
