@@ -73,3 +73,14 @@ func stringTypes() {
 	}
 
 }
+
+func numeralSystems() {
+
+	// as humans we use base 10 numeral system
+	n := 10
+	fmt.Println(n)
+}
+
+func constants() {
+
+}
