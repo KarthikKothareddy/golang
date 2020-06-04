@@ -18,7 +18,8 @@ func main() {
 
 	// varBoolean()
 	// numericTypes()
-	stringTypes()
+	// stringTypes()
+	constants()
 }
 
 func varBoolean() {
@@ -82,5 +83,24 @@ func numeralSystems() {
 }
 
 func constants() {
+
+	// const is a keyword
+	const a = 11
+	const b = 22
+
+	fmt.Println(a)
+	fmt.Printf("%T\n", a)
+	fmt.Println(b)
+	fmt.Printf("%T\n", b)
+
+	const (
+		c float64 = 33.33
+		d string  = "GoLang"
+	)
+
+	fmt.Println(c)
+	fmt.Printf("%T\n", c)
+	fmt.Println(d)
+	fmt.Printf("%T\n", d)
 
 }
