@@ -6,7 +6,8 @@ import (
 
 func main() {
 	// exercise1()
-	exercise2()
+	// exercise2()
+	exercise3()
 }
 
 func exercise1() {
@@ -34,5 +35,22 @@ func exercise2() {
 	fmt.Println(d)
 	fmt.Println(e)
 	fmt.Println(f)
+
+}
+
+func exercise3() {
+
+	const a int = 2
+	fmt.Printf("%d\t%T\n", a, a)
+
+	const b = "Karthik"
+	fmt.Printf("%s\t%T\n", b, b)
+
+	const (
+		c int = 10
+		d     = "Hello"
+	)
+	fmt.Printf("%d\t", c)
+	fmt.Printf("%T\n", c)
 
 }
