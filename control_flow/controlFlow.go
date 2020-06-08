@@ -5,7 +5,8 @@ import "fmt"
 func main() {
 	// loops()
 	// loops2()
-	loops3()
+	// loops3()
+	loopBreakContinue()
 }
 
 func loops() {
@@ -41,4 +42,19 @@ func loops3() {
 		i++
 	}
 
+}
+
+func loopBreakContinue() {
+	i := 0
+	for {
+		i++
+		if i > 20 {
+			break
+		}
+		if i%2 != 0 {
+			continue
+		}
+		fmt.Println(i)
+
+	}
 }
