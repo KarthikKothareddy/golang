@@ -6,7 +6,8 @@ func main() {
 	// loops()
 	// loops2()
 	// loops3()
-	loopBreakContinue()
+	// loopBreakContinue()
+	printAscii()
 }
 
 func loops() {
@@ -57,4 +58,11 @@ func loopBreakContinue() {
 		fmt.Println(i)
 
 	}
+}
+
+func printAscii() {
+	for i := 33; i <= 250; i++ {
+		fmt.Printf("%v\t%#x\t%#U\n", i, i, i)
+	}
+
 }
