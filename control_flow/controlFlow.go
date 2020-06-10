@@ -66,3 +66,15 @@ func printAscii() {
 	}
 
 }
+
+func conditionalStatements() {
+
+	if true {
+		fmt.Println("001")
+	}
+
+	if false {
+		fmt.Println("002")
+	}
+
+}
