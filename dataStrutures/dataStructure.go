@@ -7,7 +7,8 @@ import (
 func main() {
 	// arrays()
 	// slices()
-	sliceOperations()
+	// sliceOperations()
+	multiDimensionalSlice()
 }
 
 // GoLang recommends usage of SLICES than ARRAYS
@@ -87,5 +88,19 @@ func sliceOperations() {
 	fmt.Println(z)
 	fmt.Println(len(z))
 	fmt.Println(cap(z))
+
+}
+
+func multiDimensionalSlice() {
+
+	p1 := []string{"James", "Bond", "Vanilla"}
+	fmt.Println(p1)
+
+	p2 := []string{"BananaSplit", "Chocolate", "CookiesNCream"}
+	fmt.Println(p2)
+
+	// multi dimensional slice
+	p3 := [][]string{p1, p2}
+	fmt.Println(p3)
 
 }
