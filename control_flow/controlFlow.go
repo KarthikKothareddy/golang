@@ -129,14 +129,15 @@ func conditionalSwitch() {
 	case (1 == 1):
 		fmt.Println(" 1. after fallen through")
 		fallthrough
-	case (2 == 2):
+	case (2 != 2):
 		fmt.Println(" 2. after fallen through")
-		fallthrough
-	case (3 > 3):
+	case (3 == 3):
 		fmt.Println(" 3. after fallen through")
+		fallthrough
 	case (3 > 4):
 		fmt.Println(" 4. after fallen through")
 
+	default:
+		fmt.Println("this is default")
 	}
-
 }
