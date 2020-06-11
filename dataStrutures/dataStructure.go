@@ -54,6 +54,7 @@ func slices() {
 
 func sliceOperations() {
 
+	// composite literal
 	x := []int{5, 6, 7, 8, 9}
 	fmt.Println(x)
 
@@ -63,7 +64,28 @@ func sliceOperations() {
 
 	y := []int{555, 666, 777}
 	x = append(x, y...)
-
 	fmt.Println(x)
+
+	// deleting from a slice
+	// deleting values 7 and 8 from slice based on index
+	x = append(x[:2], x[4:]...)
+	fmt.Println(x)
+
+	// SLICE MAKE
+	// make(TYPE, INITIAL LENGTH, CAPACITY)
+	z := make([]int, 10, 100)
+	fmt.Println(z)
+	fmt.Println(len(z))
+	fmt.Println(cap(z))
+
+	z = x
+	fmt.Println(z)
+	fmt.Println(len(z))
+	fmt.Println(cap(z))
+
+	z = append(z, 1024, 2048)
+	fmt.Println(z)
+	fmt.Println(len(z))
+	fmt.Println(cap(z))
 
 }
