@@ -9,7 +9,8 @@ func main() {
 	// slices()
 	// sliceOperations()
 	// multiDimensionalSlice()
-	maps()
+	// maps()
+	mapOperations()
 }
 
 // GoLang recommends usage of SLICES than ARRAYS
@@ -126,6 +127,50 @@ func maps() {
 	// idiomatic GO Code
 	if v, ok := m["Bond"]; ok {
 		fmt.Println("The Bond Key exists: ", v)
+	}
+
+}
+
+func mapOperations() {
+
+	m := map[string]int{
+		"James": 11,
+		"Bond":  22,
+	}
+
+	// add an element to map
+	m["Jason"] = 33
+
+	// checking for a key in map
+	if v, ok := m["Jason"]; ok {
+		fmt.Println(v, ok)
+	} else {
+		fmt.Println("Jason Doesn't exist yet")
+	}
+
+	// looping through a map
+	for k, v := range m {
+		fmt.Println(k, v)
+	}
+
+	// range with slice
+	xi := []int{1, 2, 3, 4, 5}
+
+	for i, v := range xi {
+		fmt.Println(i, v)
+	}
+
+	// deleting the key from map
+	delete(m, "James")
+	fmt.Println(m)
+
+	// delete some key that doesn't exist
+	// using comma, okay idiom
+
+	if v, ok := m["Bond"]; ok {
+		fmt.Println(v, ok)
+		delete(m, "Bond")
+		fmt.Println(m)
 	}
 
 }
