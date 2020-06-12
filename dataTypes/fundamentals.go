@@ -10,7 +10,7 @@ import (
 // Ease of Programming
 
 func main() {
-	fmt.Println("This is Programming fundamentals section")
+	fmt.Println("This is Programming dataTypes section")
 
 	// runtime package
 	fmt.Println("Go OS: ", runtime.GOOS)
