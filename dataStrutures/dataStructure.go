@@ -8,7 +8,8 @@ func main() {
 	// arrays()
 	// slices()
 	// sliceOperations()
-	multiDimensionalSlice()
+	// multiDimensionalSlice()
+	maps()
 }
 
 // GoLang recommends usage of SLICES than ARRAYS
@@ -102,5 +103,29 @@ func multiDimensionalSlice() {
 	// multi dimensional slice
 	p3 := [][]string{p1, p2}
 	fmt.Println(p3)
+
+}
+
+func maps() {
+	// composite literal
+	// map[KeyType]valueType
+	m := map[string]int{
+		"James": 11,
+		"Bond":  22,
+	}
+	fmt.Println(m)
+	// accessing values by Key
+	fmt.Println(m["James"])
+	// defaults to 0
+	fmt.Println(m["NonExistentKey"])
+
+	// returns two values back
+	v, ok := m["NonExistentKey"]
+	fmt.Println(v, ok)
+
+	// idiomatic GO Code
+	if v, ok := m["Bond"]; ok {
+		fmt.Println("The Bond Key exists: ", v)
+	}
 
 }
